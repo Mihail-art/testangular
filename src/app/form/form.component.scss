@@ -1,0 +1,99 @@
+$orange: #FFBC00;
+$rederrors: #EF2828;
+$gray: #999999;
+$black: #000;
+
+.form-name {
+    font-family: 'Anton';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 75px;
+    text-transform: uppercase;
+    padding-top: 85px;
+    padding-bottom: 31px;
+
+    color: $orange;
+    & span {
+        color: #000 !important;
+    }
+}
+form {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08);
+    border-radius: 30px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 51px;
+    padding-bottom: 51px;
+}
+.form-text {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: $rederrors;
+}
+.form-label, .exampleLabelText {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    /* identical to box height */
+
+
+    color: $gray;
+}
+.f-area {
+    max-width: 511px;
+}
+input {
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid $black;
+    outline: none !important;
+    &:hover {
+        outline: none !important;
+    }
+} 
+
+textarea {
+    width: 100%;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid $black;
+    outline: none !important;
+    resize: none;
+    min-height: 145px;
+    &:hover {
+        outline: none !important;
+    }
+}
+
+.btn-submit {
+    background: $orange;
+    color: $black;
+    padding: 22px 32px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.08);
+    border-radius: 16px;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    cursor: pointer;
+
+    color: #000000;
+
+}
+.container {
+    position: relative;
+}
+.scrolTop {
+    position: absolute;
+    top: 10%;
+    right: -11%;
+}

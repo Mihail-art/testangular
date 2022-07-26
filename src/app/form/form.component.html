@@ -1,0 +1,62 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h2 class="form-name">
+                Contact <span>Us</span>
+            </h2>
+
+                <form [formGroup]="form" (ngSubmit)="submit()">
+        
+                    <div class="f-area">
+                        <div class="form-group mb-3">
+                            <label for="name" class="form-label">Full Name</label>
+                            <input 
+                                formControlName="name"
+                                id="name" 
+                                type="text" 
+                                class="form-control">
+                            <div *ngIf="f['name'].touched && f['name'].invalid" class="form-text">
+                                <div *ngIf="f['name'].errors && f['name'].errors['required']">Full Name is required</div>
+                                <div *ngIf="f['name'].errors && f['name'].errors['minlength']">Name should be 3 character.</div>
+                            </div>
+                        </div>
+                         
+                        <div class="form-group mb-3">
+                            <label class="form-label">Company Name</label>
+                            <input 
+                                id="text" 
+                                type="text" 
+                                class="form-control">
+                        </div>
+
+                        <div class="form-group mb-3">
+                            <label for="tel" class="form-label">E-mail</label>
+                            <input 
+                                formControlName="email"
+                                id="email" 
+                                type="text" 
+                                class="form-control">
+                            <div *ngIf="f['email'].touched && f['email'].invalid" class="form-text">
+                                <div *ngIf="f['email'].errors && f['email'].errors['required']">Email is required.</div>
+                                <div *ngIf="f['email'].errors && f['email'].errors['email']">Please, enter valid email address.</div>
+                            </div>
+                        </div>
+                         
+                        <div class="form-group mb-3">
+                            <label for="body" class="exampleLabelText">Write Us Messages</label>
+                            <textarea 
+                                formControlName="body"
+                                id="body" 
+                                type="text" 
+                                class="form-control">
+                            </textarea>
+                        </div>
+                        <button class="btn-submit" [disabled]="form.invalid" type="submit">Send Message</button>
+                    </div>
+                </form> 
+        </div>
+    </div>
+    <div class="scrolTop" (click)="myEvent()">
+        <img src="assets/img/scrol-t.png" alt="scroll-t">
+    </div>
+  </div>
