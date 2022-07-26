@@ -97,3 +97,29 @@ textarea {
     top: 10%;
     right: -11%;
 }
+
+@media(max-width: 400px) {
+    .scrolTop {
+        position: absolute;
+        top: 11%;
+        right: 0;
+    }
+    .form-name {
+        font-family: 'Anton';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 48px;
+        text-transform: uppercase;
+
+    }
+    form {
+        padding: 25px;
+    }
+    .f-area {
+        text-align: center;
+    }
+    .mb-3 {
+        text-align: left;
+    }
+}

@@ -52,3 +52,37 @@ p {
     top: 7%;
     left: 30%;
 }
+
+@media(max-width: 400px)  {
+    .slide {
+        overflow-x: hidden;
+    }
+    .slide__title {
+        left: 0;
+        font-family: 'Anton';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 46px;
+        line-height: 130%;
+        /* or 55px */
+
+        text-transform: uppercase;
+
+        color: #000000;
+    }
+    .space {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 148%;
+    }
+    p .scrol {
+        display: none;
+    }
+    .slide p {
+        margin: 0;
+    }
+    button {
+        margin-top: 20px;
+    }
+}
