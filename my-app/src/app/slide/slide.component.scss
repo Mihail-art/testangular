@@ -3,6 +3,7 @@
 
 .slide {
     margin-bottom: 50px;
+    width: 100%;
 }
 
 h1 {
@@ -84,5 +85,32 @@ p {
     }
     button {
         margin-top: 20px;
+    }
+}
+@media(max-width: 768px) {
+    .slide-title {
+        position: inherit;
+    }
+    h1 {
+        left: 0;
+        font-size: 53px;
+    }
+    .space {
+        width: 100%;
+        left: 0;
+        top: 0;
+    }
+}
+@media(max-width: 1024px) {
+    h1 {
+        font-size: 39px;
+    }
+    .slide__description {
+        font-size: 13px;
+    }
+    .space {
+        width: 140%;
+        left: 0;
+        top: 15%;
     }
 }
