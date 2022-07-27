@@ -10,7 +10,31 @@
             </div>
             <div class="col-6 col-m-slide">
                 <div class="slide-menu">
-                    <img src="assets/img/Group 106.png" alt="">
+                    <img src="assets/img/Group 106.png" (click)= "menuOpen()" alt="">
+                    <div class="open-menu" *ngIf="showMenu">
+                        <div class="open-menu-head">
+                            <img src="assets/img/logo.png" alt="logo">
+                            <img class="clippart" (click)="menuClose()" src="assets/img/png-clipart-computer-icons-user-information-red-cross-miscellaneous-cdr-thumbnail.png" alt="">
+                        </div>
+                        <div class="open-menu__nav">
+                            <ul>
+                                <li><a href="#">{{ menuHome }}</a></li>
+                                <li><a href="#">{{ menuDo }}</a></li>
+                                <li><a href="#">{{ menuAbout }}</a></li>
+                                <li><a href="#">{{ history }}</a></li>
+                                <li><a href="#">{{ contacnButton }}</a></li>
+                            </ul>
+                        </div>
+                        <div class="service">Services</div>
+                        <div class="open-menu__nav">
+                            <ul>
+                                <li><a href="#">{{ trainingMenu }}</a></li>
+                                <li><a href="#">{{ consultantButton }}</a></li>
+                                <li><a href="#">{{ protectButton }}</a></li>
+                                <li><a href="#">{{ softwareButton }}</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
                 <div class="menu">
                     <ul>
